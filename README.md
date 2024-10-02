@@ -1,5 +1,7 @@
 # Workshop - Animationens 12 grundprinciper
 
+![screen](Bild1.jpg)
+
 ## Steg 1
 
 Skapa en egen bransch för er grupp här i Githubrepot. Kom överens om det mest Disneyaktiga namnet för er grupp, och döp er bransch efter ert gruppnamn.
