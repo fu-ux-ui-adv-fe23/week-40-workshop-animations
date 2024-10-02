@@ -8,7 +8,7 @@ Skapa en egen bransch för er grupp här i Githubrepot. Kom överens om det mest
 
 ## Steg 2
 
-Besök webbsidan [CSS Animation Rocks](https://cssanimation.rocks/principles/) och titta igenom alla animationer. Välj ut den ni tycker ser enklast ut och försök återskapa den (Om ni väljer *ease in and ease out* så vill jag att ni gör en liten twist på den så det inte blir för enkelt). Pusha upp er lösning till er bransch på Github (jag löser alla merges när vi är klara för dagen).
+Besök webbsidan [CSS Animation Rocks](https://cssanimation.rocks/principles/) och titta igenom alla animationer. Välj ut den ni tycker ser enklast ut och försök återskapa den (Om ni väljer *slow in and slow out* eller *timing* så vill jag att ni gör en liten twist på den så det inte blir för enkelt). Pusha upp er lösning till er bransch på Github (jag löser alla merges när vi är klara för dagen).
 
 ## Steg 3
 
