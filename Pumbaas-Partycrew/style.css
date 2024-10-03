@@ -1,0 +1,49 @@
+* {
+  background-color: beige;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+}
+.wall {
+  background-color: black;
+  width: 30px;
+  height: 500px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: rebeccapurple;
+  top: 120px;
+  position: absolute;
+  border: 50px solid orange;
+  animation: movebox 5s linear infinite;
+}
+@keyframes movebox {
+  0%,
+  25% {
+    transform: translateX(10px);
+    top: 100px;
+  }
+  25%,
+  75% {
+    transform: translateX(676px);
+    top: 100px;
+    opacity: 1;
+  }
+  75%,
+  100% {
+    transform: translateX(676px);
+    top: 400px;
+    opacity: 0;
+  }
+}
