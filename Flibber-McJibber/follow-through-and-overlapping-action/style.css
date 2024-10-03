@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 50%;
+    aspect-ratio: 1;
+    margin: auto;
+    background: #e9b59f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+
+    .box {
+        position: absolute;
+        left: -3rem;
+        background-color: #2d97db;
+        width: 6rem;
+        height: 6rem;
+        border: 1rem #fff solid;
+        animation: slide-in 3s infinite ease-out;
+        box-shadow: .2px .2px #2d97db;
+    }
+}
+
+@keyframes slide-in {
+0% {
+    left: -10rem;
+    transform: none;
+}
+
+10%, 60% {
+    transform: skew(15deg);
+}
+
+60% {
+    transform: skew(15deg);
+}
+90% {
+    left: 28rem;
+    transform: skew(-13deg);
+}
+
+100%{
+    left: 28rem;
+    transform: skew(0);
+}
+}
