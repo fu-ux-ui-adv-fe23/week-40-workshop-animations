@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9b59f;
+}
+
+.Squash-and-stretch {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .wall {
+    height: 20rem;
+    position: absolute;
+    top: calc(50% - 10rem);
+    left: calc(50% + 12rem);
+    border-right: 1.5rem solid black;
+  }
+
+  .box {
+    /* height: 10rem; */
+    opacity: 0;
+    width: 10rem;
+    aspect-ratio: 1;
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: calc(50% - 8rem);
+    border: 1.5rem solid white;
+    background-color: rgb(78, 78, 254);
+    animation: Squash-and-stretch 2s infinite ease-out;
+    /* animation-delay: 4s; */
+  }
+}
+
+@keyframes Squash-and-stretch {
+  0%,
+  15% {
+    opacity: 0;
+    transform: none;
+  }
+
+  15%,
+  25% {
+    opacity: 1;
+    transform: none;
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateX(-3rem) scaleY(0.5);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translateX(12rem) scaleY(1.5) scaleX(0.6);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(12rem) scaleY(1.5) scaleX(0.6);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(12rem) translateY(8rem) scaleY(1.5) scaleX(0.6);
+  }
+}
