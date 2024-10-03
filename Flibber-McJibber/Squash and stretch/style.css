@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9b59f;
+}
+
+.squash {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    .box {
+        background-color: aqua;
+        width: 4rem;
+        aspect-ratio: 1;
+        border: 1rem solid white;
+        position: absolute;
+        top: calc(50% - 2rem);
+        left: calc(50% - 2rem);
+        animation: squash 5s infinite ease-out;
+
+    }
+
+    .wall {
+        width: 1rem;
+        height: 10rem;
+        background-color: black;
+        position: absolute;
+        top: calc(50% - 4rem);
+        right: calc(40% - 4rem);
+
+    }
+
+}
+
+@keyframes squash {
+
+    0%,
+    5% {
+        transform: none;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    5%,
+    10% {
+        transform: translateX(-7rem);
+        width: 6rem;
+        height: 3rem;
+    }
+
+    11%,
+    40% {
+        transform: translateX(7.5rem);
+        width: 3rem;
+        height: 6rem;
+    }
+
+
+    41%,
+    85% {
+        opacity: 80%;
+        transform: translateX(7.5rem) translateY(8rem) ease-out;
+        width: 3rem;
+        height: 6rem;
+    }
+
+    85%,
+    95% {
+        opacity: 0;
+        transform: translateX(7.5rem) translateY(8rem);
+        width: 3rem;
+        height: 6rem;
+    }
+
+    96%,
+    100% {
+        width: 4rem;
+        height: 4rem;
+    }
+}
